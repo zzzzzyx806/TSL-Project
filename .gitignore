@@ -1,0 +1,30 @@
+# 忽略所有敏感文件（私钥、证书请求等）
+TSL/*
+
+# 允许上传特定的文件
+# TSL_A 中需要上传的文件
+!TSL/TSL_A/A.py
+!TSL/TSL_A/ca_cert.pem
+!TSL/TSL_A/ca_public.pem
+!TSL/TSL_A/ed25519_cert.pem
+!TSL/TSL_A/ed25519_public.pem
+
+# TSL_B 中需要上传的文件
+!TSL/TSL_B/A.py
+!TSL/TSL_B/ca_cert.pem
+!TSL/TSL_B/ca_public.pem
+!TSL/TSL_B/ed25519_cert.pem
+!TSL/TSL_B/ed25519_public.pem
+
+# 忽略私钥和敏感文件
+# TSL_A 中的私钥和敏感文件
+TSL/TSL_A/ca_private.pem
+TSL/TSL_A/ed25519_private.pem
+TSL/TSL_A/ed25519_csr.pem
+TSL/TSL_A/ca_cert.srl
+
+# TSL_B 中的私钥和敏感文件
+TSL/TSL_B/ca_private.pem
+TSL/TSL_B/ed25519_private.pem
+TSL/TSL_B/ed25519_csr.pem
+TSL/TSL_B/ca_cert.srl
